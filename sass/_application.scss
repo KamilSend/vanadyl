@@ -1,0 +1,10 @@
+.application{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  //overflow: hidden;
+  //z-index:3;
+  &__image{
+    transform: translateY(-25%);
+  }
+}

@@ -1,0 +1,134 @@
+header{
+  width:60vw;
+  max-width:1000px;
+  display:flex;
+  justify-content: space-between;
+  margin:0 auto;
+  max-height: 70px;
+  position:relative;
+
+  @include respond(tab-land){
+    width:100vw;
+  }
+
+  .logo{
+    padding:$menu-padding;
+  }
+
+  a{
+    display: block;
+    text-decoration: none;
+    color:rgba(41,41,53,255);
+    padding:$menu-padding;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size:16px;
+    position:relative;
+
+    @include respond(tab-land){
+      font-size:18px;
+    }
+
+    &:hover::after{
+      position:absolute;
+      top:50px;
+      left:$menu-padding;
+      content:"";
+      width: calc(100% - 40px);
+      height:2px;
+      background-color: rgba(64, 68, 230, 255);
+    }
+  }
+
+}
+
+button.hamburger{
+  display:none;
+  outline:none;
+  position:absolute;
+  top:0;
+  right:0;
+  @include respond(tab-land){
+    display:block;
+  }
+}
+
+.navigation{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  //position: relative;
+  position: static;
+  z-index:3;
+
+  @include respond(tab-land){
+    position: absolute;
+    left:0px;
+    top:70px;
+    flex-direction: column;
+    display:none;
+  }
+
+  img{
+    width:16px;
+    height:16px;
+  }
+
+  &-link{
+    height:100%;
+    @include respond(tab-land){
+      background-color: #292935;
+      a{
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.dropdown{
+  position: relative;
+
+  @include respond(tab-land){
+    position:static;
+  }
+  &__wrapper{
+    position: absolute;
+    top:70px;
+    left:$menu-width;
+    z-index: 3;
+    display:none;
+    background-color: #292935;
+
+    @include respond(tab-land){
+      //position:static;
+    }
+
+    &__secondary{
+      min-width: $menu-width;
+      a{
+        font-size: 16px;
+        line-height: 35px;
+        color: #ffffff;
+        padding:5px;
+        @include respond(tab-land){
+          font-size: 18px;
+        }
+      }
+
+      &__thirtiary{
+        position: absolute;
+        top:0;
+        left: $menu-width;
+        min-width: $menu-width;
+        background-color: #292935;
+        display:none;
+      }
+    }
+
+  }
+
+
+}
+.active{
+  display: block !important;
+}

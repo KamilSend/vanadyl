@@ -1,0 +1,18 @@
+@import "definitions";
+@import "header";
+@import "banner";
+@import "application";
+@import "icons";
+@import "video";
+@import "people";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #fefefd;
+  overflow-x: hidden;
+}

@@ -63,7 +63,7 @@ button.hamburger{
 
   @include respond(tab-land){
     position: absolute;
-    left:0px;
+    left:0;
     top:70px;
     flex-direction: column;
     display:none;
@@ -76,6 +76,7 @@ button.hamburger{
 
   &-link{
     height:100%;
+    width:$menu-width;
     @include respond(tab-land){
       background-color: #292935;
       a{
@@ -110,8 +111,11 @@ button.hamburger{
         line-height: 35px;
         color: #ffffff;
         padding:5px;
+
         @include respond(tab-land){
           font-size: 18px;
+          font-weight: 300;
+          font-family: "Poppins", sans-serif;
         }
       }
 

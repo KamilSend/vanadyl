@@ -51,7 +51,7 @@ button.hamburger {
   @media only screen and (max-width: 1200px) {
     .navigation {
       position: absolute;
-      left: 0px;
+      left: 0;
       top: 70px;
       flex-direction: column;
       display: none; } }
@@ -59,7 +59,8 @@ button.hamburger {
     width: 16px;
     height: 16px; }
   .navigation-link {
-    height: 100%; }
+    height: 100%;
+    width: 200px; }
     @media only screen and (max-width: 1200px) {
       .navigation-link {
         background-color: #292935; }
@@ -74,12 +75,12 @@ button.hamburger {
   .dropdown__wrapper {
     position: absolute;
     top: 70px;
-    left: 150px;
+    left: 200px;
     z-index: 3;
     display: none;
     background-color: #292935; }
     .dropdown__wrapper__secondary {
-      min-width: 150px; }
+      min-width: 200px; }
       .dropdown__wrapper__secondary a {
         font-size: 16px;
         line-height: 35px;
@@ -87,12 +88,14 @@ button.hamburger {
         padding: 5px; }
         @media only screen and (max-width: 1200px) {
           .dropdown__wrapper__secondary a {
-            font-size: 18px; } }
+            font-size: 18px;
+            font-weight: 300;
+            font-family: "Poppins", sans-serif; } }
       .dropdown__wrapper__secondary__thirtiary {
         position: absolute;
         top: 0;
-        left: 150px;
-        min-width: 150px;
+        left: 200px;
+        min-width: 200px;
         background-color: #292935;
         display: none; }
 
@@ -326,5 +329,5 @@ button.hamburger {
   box-sizing: border-box; }
 
 body {
-  background-color: #fefefd;
+  background-color: #fefefe;
   overflow-x: hidden; }

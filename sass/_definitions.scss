@@ -1,5 +1,5 @@
 $menu-padding: 20px;
-$menu-width: 150px;
+$menu-width: 200px;
 
 @mixin respond($breakpoint) {
   @if $breakpoint == small-phone {

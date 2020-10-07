@@ -1,6 +1,6 @@
 header{
   width:60vw;
-  max-width:1000px;
+  max-width:1400px;
   display:flex;
   justify-content: space-between;
   margin:0 auto;
@@ -76,9 +76,10 @@ button.hamburger{
 
   &-link{
     height:100%;
-    width:$menu-width;
+    //width:$menu-width*0.7;
     @include respond(tab-land){
       background-color: #292935;
+      width:$menu-width;
       a{
         color: #ffffff;
       }
@@ -95,17 +96,18 @@ button.hamburger{
   &__wrapper{
     position: absolute;
     top:70px;
-    left:$menu-width;
+    left:0;
     z-index: 3;
     display:none;
     background-color: #292935;
 
     @include respond(tab-land){
-      //position:static;
+      position:static;
     }
 
     &__secondary{
       min-width: $menu-width;
+      padding-left:$menu-padding;
       a{
         font-size: 16px;
         line-height: 35px;
@@ -123,9 +125,13 @@ button.hamburger{
         position: absolute;
         top:0;
         left: $menu-width;
-        min-width: $menu-width;
+        min-width:$menu-width - $menu-padding;
         background-color: #292935;
         display:none;
+        padding-left:$menu-padding;
+        @include respond(tab-land){
+          position:static;
+        }
       }
     }
 
@@ -134,5 +140,7 @@ button.hamburger{
 
 }
 .active{
-  display: block !important;
+  @include respond(tab-land){
+    display: block !important;
+  }
 }

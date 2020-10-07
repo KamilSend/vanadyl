@@ -1,6 +1,6 @@
 header {
   width: 60vw;
-  max-width: 1000px;
+  max-width: 1400px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -59,11 +59,11 @@ button.hamburger {
     width: 16px;
     height: 16px; }
   .navigation-link {
-    height: 100%;
-    width: 200px; }
+    height: 100%; }
     @media only screen and (max-width: 1200px) {
       .navigation-link {
-        background-color: #292935; }
+        background-color: #292935;
+        width: 200px; }
         .navigation-link a {
           color: #ffffff; } }
 
@@ -75,12 +75,16 @@ button.hamburger {
   .dropdown__wrapper {
     position: absolute;
     top: 70px;
-    left: 200px;
+    left: 0;
     z-index: 3;
     display: none;
     background-color: #292935; }
+    @media only screen and (max-width: 1200px) {
+      .dropdown__wrapper {
+        position: static; } }
     .dropdown__wrapper__secondary {
-      min-width: 200px; }
+      min-width: 200px;
+      padding-left: 20px; }
       .dropdown__wrapper__secondary a {
         font-size: 16px;
         line-height: 35px;
@@ -95,12 +99,17 @@ button.hamburger {
         position: absolute;
         top: 0;
         left: 200px;
-        min-width: 200px;
+        min-width: 180px;
         background-color: #292935;
-        display: none; }
+        display: none;
+        padding-left: 20px; }
+        @media only screen and (max-width: 1200px) {
+          .dropdown__wrapper__secondary__thirtiary {
+            position: static; } }
 
-.active {
-  display: block !important; }
+@media only screen and (max-width: 1200px) {
+  .active {
+    display: block !important; } }
 
 .banner {
   width: 100vw;
@@ -141,6 +150,10 @@ button.hamburger {
   justify-content: center; }
   .application__image {
     transform: translateY(-25%); }
+    @media only screen and (max-width: 1200px) {
+      .application__image {
+        max-width: 90vw;
+        height: auto; } }
 
 .icons {
   position: relative;
@@ -329,5 +342,5 @@ button.hamburger {
   box-sizing: border-box; }
 
 body {
-  background-color: #fefefe;
+  background-color: #fefeff;
   overflow-x: hidden; }

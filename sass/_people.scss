@@ -1,5 +1,8 @@
 .people{
   position: relative;
+  @include respond(tab-land){
+    display: none;
+  }
 
   &-img{
     position: absolute;

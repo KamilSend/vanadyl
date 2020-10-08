@@ -139,7 +139,12 @@ button.hamburger{
 
 
 }
+
+.navigation.active{
+  display: flex;
+}
 .active{
+  display: block;
   @include respond(tab-land){
     display: block !important;
   }

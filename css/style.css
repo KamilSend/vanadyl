@@ -107,9 +107,14 @@ button.hamburger {
           .dropdown__wrapper__secondary__thirtiary {
             position: static; } }
 
-@media only screen and (max-width: 1200px) {
-  .active {
-    display: block !important; } }
+.navigation.active {
+  display: flex; }
+
+.active {
+  display: block; }
+  @media only screen and (max-width: 1200px) {
+    .active {
+      display: block !important; } }
 
 .banner {
   width: 100vw;
@@ -261,6 +266,9 @@ button.hamburger {
 
 .people {
   position: relative; }
+  @media only screen and (max-width: 1200px) {
+    .people {
+      display: none; } }
   .people-img {
     position: absolute;
     height: 180px;
@@ -342,5 +350,5 @@ button.hamburger {
   box-sizing: border-box; }
 
 body {
-  background-color: #fefeff;
+  background-color: #fefefe;
   overflow-x: hidden; }

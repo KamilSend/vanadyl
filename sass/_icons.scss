@@ -7,17 +7,34 @@
   flex-wrap: wrap;
   justify-content: center;
 
+  @include respond(tab-land){
+    flex-direction: column;
+  }
+
   &__icon{
     width: 20%;
     padding:20px;
+    @include respond(tab-land){
+      width: 100%;
+    }
 
     &-title{
       width:100%;
-      color: rgba(41,41,53,255);
+      color: #292935;
       padding:10px;
-      font-size: 20px;
+      font-size: 36px;
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
+      text-align: center;
+      h1{
+        max-width: 600px;
+        margin:0 auto;
+      }
+      h2{
+        max-width: 600px;
+        margin:0 auto;
+      }
+
     }
 
     &-img{
@@ -25,13 +42,14 @@
     }
 
     &-text{
-      color: rgba(161,161,161,255);
+      color: #a1a1a1;
       text-align: center;
       padding:10px;
-      line-height: 1.5;
+      line-height: 24px;
       font-size: 16px;
       font-family: 'Poppins', sans-serif;
       font-weight: 400;
+
     }
 
     &-link{

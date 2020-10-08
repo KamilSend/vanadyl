@@ -167,23 +167,36 @@ button.hamburger {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
+  @media only screen and (max-width: 1200px) {
+    .icons {
+      flex-direction: column; } }
   .icons__icon {
     width: 20%;
     padding: 20px; }
+    @media only screen and (max-width: 1200px) {
+      .icons__icon {
+        width: 100%; } }
     .icons__icon-title {
       width: 100%;
       color: #292935;
       padding: 10px;
-      font-size: 20px;
+      font-size: 36px;
       font-family: 'Poppins', sans-serif;
-      font-weight: 600; }
+      font-weight: 600;
+      text-align: center; }
+      .icons__icon-title h1 {
+        max-width: 600px;
+        margin: 0 auto; }
+      .icons__icon-title h2 {
+        max-width: 600px;
+        margin: 0 auto; }
     .icons__icon-img {
       padding: 15px; }
     .icons__icon-text {
       color: #a1a1a1;
       text-align: center;
       padding: 10px;
-      line-height: 1.5;
+      line-height: 24px;
       font-size: 16px;
       font-family: 'Poppins', sans-serif;
       font-weight: 400; }
@@ -222,6 +235,10 @@ button.hamburger {
   position: relative;
   background-image: url("../img/video/pexelsphoto26939.png");
   background-size: cover; }
+  @media only screen and (max-width: 600px) {
+    .video__img {
+      width: 60px;
+      height: auto; } }
   .video__img-cover {
     position: absolute;
     top: 0;
@@ -235,6 +252,9 @@ button.hamburger {
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer; }
+    @media only screen and (max-width: 600px) {
+      .video__img-play {
+        top: 70%; } }
   .video-play {
     position: absolute;
     top: 85%;
@@ -244,16 +264,35 @@ button.hamburger {
     font-weight: 600;
     font-size: 23px;
     color: white; }
+    @media only screen and (max-width: 600px) {
+      .video-play {
+        top: 90%; } }
   .video__text {
+    width: 50%;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 23px;
+    line-height: 26px;
     color: white;
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%); }
+    @media only screen and (max-width: 1200px) {
+      .video__text {
+        top: 10%;
+        width: 90%; } }
+    @media only screen and (max-width: 600px) {
+      .video__text {
+        padding: 10px;
+        top: 0;
+        width: 100%; } }
+    @media only screen and (max-width: 400px) {
+      .video__text {
+        font-size: 20px;
+        line-height: 23px; } }
   .video__signature {
+    width: 100%;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -263,6 +302,13 @@ button.hamburger {
     left: 50%;
     transform: translateX(-50%);
     text-transform: uppercase; }
+    @media only screen and (max-width: 1200px) {
+      .video__signature {
+        top: 40%; } }
+    @media only screen and (max-width: 600px) {
+      .video__signature {
+        padding: 5px;
+        top: 60%; } }
 
 .people {
   position: relative; }

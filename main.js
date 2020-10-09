@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const toggler = document.querySelector('.hamburger')
     const navigation = document.querySelector('.navigation')
 
-
     let toggle = true;
 
     toggler.addEventListener('click', ()=>{

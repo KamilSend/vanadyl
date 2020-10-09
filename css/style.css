@@ -312,32 +312,44 @@ button.hamburger {
 
 .people {
   position: relative; }
-  @media only screen and (max-width: 1200px) {
-    .people {
-      display: none; } }
   .people-img {
     position: absolute;
     height: 180px;
-    top: -53px;
+    top: -57px;
     left: 50%; }
-  .people-cover {
-    position: absolute;
-    height: 104px;
-    top: -42px;
-    left: 50%;
-    opacity: 0.5;
-    transition: .2s; }
-    .people-cover:hover {
-      opacity: 0; }
-  .people-wrapper {
+    @media only screen and (max-width: 1200px) {
+      .people-img {
+        transform: scale(0.5);
+        top: -61px; } }
+  .people__wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
-    transform: translateY(70px); }
-  .people-logo {
-    filter: invert(30%);
-    width: 125px;
-    padding: 10px; }
+    transform: translateY(-55px); }
+    .people__wrapper__cover {
+      margin: 10px;
+      opacity: 0.8;
+      transition: .2s; }
+      @media only screen and (max-width: 1200px) {
+        .people__wrapper__cover {
+          margin: 5px;
+          height: 52px;
+          width: auto;
+          transform: translateY(40px); } }
+      .people__wrapper__cover:hover {
+        opacity: 0; }
+  .people__logos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-30px); }
+    @media only screen and (max-width: 1200px) {
+      .people__logos {
+        display: none; } }
+    .people__logos__logo {
+      filter: invert(30%);
+      width: 125px;
+      padding: 10px; }
   .people__heading {
     max-width: 658px;
     font-size: 36px;
@@ -346,7 +358,7 @@ button.hamburger {
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    margin: 100px auto 50px auto; }
+    margin: 50px auto 50px auto; }
   .people__text {
     max-width: 752px;
     font-size: 16px;
@@ -362,33 +374,41 @@ button.hamburger {
       color: #4044e6;
       font-weight: 600; }
   .people-img:nth-child(1) {
-    top: -53px;
-    transform: translateX(-400px);
+    top: -57px;
+    transform: translateX(-397px);
     clip-path: circle(50px at 55% 35%); }
+    @media only screen and (max-width: 1200px) {
+      .people-img:nth-child(1) {
+        top: -61px;
+        transform: translateX(-266px) scale(0.5); } }
   .people-img:nth-child(2) {
-    transform: translateX(-276px);
+    transform: translateX(-272px);
     clip-path: circle(50px at 55% 35%); }
+    @media only screen and (max-width: 1200px) {
+      .people-img:nth-child(2) {
+        transform: translateX(-204px) scale(0.5); } }
   .people-img:nth-child(3) {
-    transform: translateX(-82px);
+    transform: translateX(-81px);
     clip-path: circle(50px at 25% 35%); }
+    @media only screen and (max-width: 1200px) {
+      .people-img:nth-child(3) {
+        transform: translateX(-120px) scale(0.5); } }
   .people-img:nth-child(4) {
-    top: -71px;
+    top: -75px;
     transform: translateX(30px);
     clip-path: circle(50px at 35% 45%); }
+    @media only screen and (max-width: 1200px) {
+      .people-img:nth-child(4) {
+        top: -71px;
+        transform: translateX(-53px) scale(0.5); } }
   .people-img:nth-child(5) {
-    top: -71px;
-    transform: translateX(130px);
+    top: -75px;
+    transform: translateX(128px);
     clip-path: circle(50px at 60% 45%); }
-  .people-cover:nth-child(6) {
-    transform: translateX(-304px); }
-  .people-cover:nth-child(7) {
-    transform: translateX(-179px); }
-  .people-cover:nth-child(8) {
-    transform: translateX(-54px); }
-  .people-cover:nth-child(9) {
-    transform: translateX(71px); }
-  .people-cover:nth-child(10) {
-    transform: translateX(197px); }
+    @media only screen and (max-width: 1200px) {
+      .people-img:nth-child(5) {
+        top: -71px;
+        transform: translateX(14px) scale(0.5); } }
 
 * {
   margin: 0;
@@ -396,5 +416,5 @@ button.hamburger {
   box-sizing: border-box; }
 
 body {
-  background-color: #fefefe;
+  background-color: #fefeff;
   overflow-x: hidden; }

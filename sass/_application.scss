@@ -11,6 +11,8 @@
     @include respond(tab-land){
       max-width: 90vw;
       height:auto;
+      transform: translateY(-15%);
+      margin-bottom: -30px;
     }
   }
 }

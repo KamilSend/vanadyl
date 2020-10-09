@@ -8,7 +8,17 @@
   background-image: url("../img/video/pexelsphoto26939.png");
   background-size: cover;
 
+  @include respond(tab-port){
+    height:85vh;
+  }
+
   &__img{
+
+    @include respond(tab-port){
+      width:70px;
+      height:auto;
+    }
+
     @include respond(phone){
       width:60px;
       height:auto;
@@ -45,7 +55,7 @@
     font-size:23px;
     color: rgba(255,255,255,255);
     @include respond(phone){
-      top:90%;
+      top:87%;
     }
   }
 
@@ -60,12 +70,20 @@
     top:20%;
     left:50%;
     transform: translateX(-50%);
+
     @include respond(tab-land){
       top:10%;
       width: 90%;
     }
+
+    @include respond(tab-port){
+      top:0;
+      width: 100%;
+      padding:5px;
+    }
+
     @include respond(phone){
-      padding:10px;
+      padding:5px;
       top:0;
       width: 100%;
     }
@@ -88,6 +106,10 @@
     text-transform: uppercase;
     @include respond(tab-land){
       top:40%;
+    }
+
+    @include respond(tab-port){
+      top:50%;
     }
 
     @include respond(phone){

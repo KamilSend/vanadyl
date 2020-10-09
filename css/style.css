@@ -143,7 +143,7 @@ button.hamburger {
     @media only screen and (max-width: 1200px) {
       .banner__title {
         top: 20%; } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 900px) {
       .banner__title {
         top: 10%; } }
     .banner__title-secondary {
@@ -172,7 +172,9 @@ button.hamburger {
     @media only screen and (max-width: 1200px) {
       .application__image {
         max-width: 90vw;
-        height: auto; } }
+        height: auto;
+        transform: translateY(-15%);
+        margin-bottom: -30px; } }
 
 .icons {
   position: relative;
@@ -249,6 +251,13 @@ button.hamburger {
   position: relative;
   background-image: url("../img/video/pexelsphoto26939.png");
   background-size: cover; }
+  @media only screen and (max-width: 900px) {
+    .video {
+      height: 85vh; } }
+  @media only screen and (max-width: 900px) {
+    .video__img {
+      width: 70px;
+      height: auto; } }
   @media only screen and (max-width: 600px) {
     .video__img {
       width: 60px;
@@ -280,7 +289,7 @@ button.hamburger {
     color: white; }
     @media only screen and (max-width: 600px) {
       .video-play {
-        top: 90%; } }
+        top: 87%; } }
   .video__text {
     width: 50%;
     font-family: 'Poppins', sans-serif;
@@ -296,9 +305,14 @@ button.hamburger {
       .video__text {
         top: 10%;
         width: 90%; } }
+    @media only screen and (max-width: 900px) {
+      .video__text {
+        top: 0;
+        width: 100%;
+        padding: 5px; } }
     @media only screen and (max-width: 600px) {
       .video__text {
-        padding: 10px;
+        padding: 5px;
         top: 0;
         width: 100%; } }
     @media only screen and (max-width: 400px) {
@@ -319,6 +333,9 @@ button.hamburger {
     @media only screen and (max-width: 1200px) {
       .video__signature {
         top: 40%; } }
+    @media only screen and (max-width: 900px) {
+      .video__signature {
+        top: 50%; } }
     @media only screen and (max-width: 600px) {
       .video__signature {
         padding: 5px;
@@ -384,7 +401,9 @@ button.hamburger {
     margin: 0 auto; }
     .people__text p {
       padding: 10px; }
-    .people__text-span {
+    .people__text-coloured {
+      max-width: 100%;
+      width: 100%;
       color: #4044e6;
       font-weight: 600; }
   .people-img:nth-child(1) {

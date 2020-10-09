@@ -9,17 +9,13 @@
   background-size: cover;
 
   &__img{
-    //transform: translateY(-50%);
-    //width:100%;
-    //height:auto;
-
     &-cover{
       position:absolute;
       top:0;
       left:0;
       width:auto;
-      height:100%;
-      transform: translateY(0);
+      height:102%;
+      transform: translateY(-2px);
     }
   }
 
@@ -32,7 +28,15 @@
     color:rgba(255,255,255,255);
     font-family: 'Poppins', sans-serif;
 
+    @include respond(tab-land){
+      top:20%;
+    }
+    @include respond(phone){
+      top:10%;
+    }
+
     &-secondary{
+      width:90%;
       position: absolute;
       top:50%;
       left:50%;
@@ -40,6 +44,13 @@
       font-size: 20px;
       color:rgba(255,255,255,255);
       font-family: 'Poppins', sans-serif;
+
+      @include respond(tab-land){
+        top:40%;
+      }
+      @include respond(phone){
+        top:30%;
+      }
     }
   }
 }

@@ -130,8 +130,8 @@ button.hamburger {
     top: 0;
     left: 0;
     width: auto;
-    height: 100%;
-    transform: translateY(0); }
+    height: 102%;
+    transform: translateY(-2px); }
   .banner__title {
     position: absolute;
     top: 30%;
@@ -140,7 +140,14 @@ button.hamburger {
     font-size: 48px;
     color: white;
     font-family: 'Poppins', sans-serif; }
+    @media only screen and (max-width: 1200px) {
+      .banner__title {
+        top: 20%; } }
+    @media only screen and (max-width: 600px) {
+      .banner__title {
+        top: 10%; } }
     .banner__title-secondary {
+      width: 90%;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -148,11 +155,18 @@ button.hamburger {
       font-size: 20px;
       color: white;
       font-family: 'Poppins', sans-serif; }
+      @media only screen and (max-width: 1200px) {
+        .banner__title-secondary {
+          top: 40%; } }
+      @media only screen and (max-width: 600px) {
+        .banner__title-secondary {
+          top: 30%; } }
 
 .application {
   width: 100%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: -50px; }
   .application__image {
     transform: translateY(-25%); }
     @media only screen and (max-width: 1200px) {

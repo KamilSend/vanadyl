@@ -145,7 +145,7 @@ button.hamburger {
         top: 20%; } }
     @media only screen and (max-width: 900px) {
       .banner__title {
-        top: 10%; } }
+        top: 5%; } }
     .banner__title-secondary {
       width: 90%;
       position: absolute;
@@ -359,8 +359,10 @@ button.hamburger {
     transform: translateY(-55px); }
     .people__wrapper__cover {
       margin: 10px;
-      opacity: 0.8;
+      opacity: 0.5;
       transition: .2s; }
+      .people__wrapper__cover:nth-child(3) {
+        opacity: 0; }
       @media only screen and (max-width: 1200px) {
         .people__wrapper__cover {
           margin: 5px;

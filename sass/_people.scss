@@ -24,8 +24,12 @@
 
     &__cover{
       margin:10px;
-      opacity:0.8;
+      opacity:0.5;
       transition: .2s;
+
+      &:nth-child(3){
+        opacity:0;
+      }
 
       @include respond(tab-land){
         margin:5px;

@@ -29,16 +29,29 @@ header{
       font-size:18px;
     }
 
-    &:hover::after{
+    //&:hover::after{
+    //  position:absolute;
+    //  top:67px;
+    //  left:$menu-padding;
+    //  content:"";
+    //  width: calc(100% - 40px);
+    //  height:3px;
+    //  background-color: rgba(64, 68, 230, 255);
+    //}
+  }
+
+  .navigation-link > a:hover::after{
+
       position:absolute;
-      top:50px;
+      top:67px;
       left:$menu-padding;
       content:"";
       width: calc(100% - 40px);
-      height:2px;
+      height:3px;
       background-color: rgba(64, 68, 230, 255);
-    }
+
   }
+
 
 }
 
@@ -108,11 +121,19 @@ button.hamburger{
     &__secondary{
       min-width: $menu-width;
       padding-left:$menu-padding;
+
       a{
         font-size: 16px;
         line-height: 35px;
         color: #ffffff;
         padding:5px;
+        font-family: myriad-pro-regular, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        &:hover{
+          transform: translateX(15px);
+          color: #4044e6;
+        }
 
         @include respond(tab-land){
           font-size: 18px;

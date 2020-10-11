@@ -77,6 +77,10 @@ button.hamburger{
   position: static;
   z-index:3;
 
+  &__searchbtn{
+    cursor: pointer;
+  }
+
   @include respond(tab-land){
     position: absolute;
     left:0;

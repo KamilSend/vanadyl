@@ -1,7 +1,7 @@
 {
-  "name": "Natours",
+  "name": "vanadyl",
   "version": "1.0.0",
-  "description": "Natours webpage",
+  "description": "vanadyl webpage",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/style.scss css/style.css -w",
@@ -12,8 +12,8 @@
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
-  "author": "Jonas",
-  "license": "ISC",
+  "author": "Kamil Sendecki",
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.2.6",
     "compile-sass": "^1.0.1",

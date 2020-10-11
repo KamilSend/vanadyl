@@ -58,6 +58,8 @@ button.hamburger {
   align-items: center;
   position: static;
   z-index: 3; }
+  .navigation__searchbtn {
+    cursor: pointer; }
   @media only screen and (max-width: 1200px) {
     .navigation {
       position: absolute;

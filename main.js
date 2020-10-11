@@ -92,7 +92,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
     })
     //VIDEO-END----------------------------------------------------------------------------------------------
 
+    //SEARCH----------------------------------------------------------------------------------------------
 
+    const search = document.querySelector('.navigation__searchbtn')
+    const searchWrapper = document.querySelector('.navigation__searchWrapper')
+
+    search.addEventListener('click', ()=>{
+        searchWrapper.classList.toggle('active')
+    })
+
+
+    //SEARCH-END------------------------------------------------------------------------------------------
 
 })
 

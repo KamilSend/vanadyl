@@ -82,35 +82,71 @@ button.hamburger{
     display:none;
   }
 
+  &__searchWrapper{
+    display:none;
+    position:fixed;
+    top:0;
+    right:150px;
+    max-width: 180px;
+    text-align: center;
+
+    @include respond(big-desktop){
+      right:100px;
+    }
+    @include respond(desktop){
+      right:20px;
+    }
+    @include respond(tab-land){
+      position:relative;
+      display:block;
+      max-width: 100%;
+      right:0;
+    }
+  }
+
   input{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #292935;
+
+    @include respond(tab-land){
+      border-bottom: 1px solid #ffffff;
+    }
   }
   &-input{
-    width:100%;
+    width:80%;
     outline:none;
-    background-color: #292935;
     border:none;
     font-size: 18px;
     //line-height: 64px;
     font-weight: 300;
     font-family: "Poppins", sans-serif;
-    padding-left:20px;
     margin-bottom: 20px;
     margin-top: 20px;
-    color: #ffffff;
+    color: #292935;
+    background-color: #ffffff;
 
+    @include respond(tab-land){
+      background-color: #292935;
+      color: #ffffff;
+    }
 
     &::placeholder{
-      color: #ffffff;
+      color: #292935;
+      @include respond(tab-land){
+        color: #ffffff;
+      }
     }
   }
 
   &-img{
+    display:none;
     position: absolute;
-    right:10px;
+    right:5px;
     top:50%;
     transform: translateY(-50%);
     filter: invert(100%);
+    @include respond(tab-land){
+      display:block;
+    }
   }
 
   img{
@@ -121,7 +157,7 @@ button.hamburger{
   &-link{
     height:100%;
     &:first-child{
-      position: relative;
+      //position: relative;
     }
     @include respond(tab-land){
       background-color: #292935;
@@ -197,6 +233,11 @@ button.hamburger{
 .navigation.active{
   display: flex;
 }
+
+.navigation__searchWrapper.active{
+  display: block !important;
+}
+
 .active{
   display: block;
   @include respond(tab-land){

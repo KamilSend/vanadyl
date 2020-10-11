@@ -55,35 +55,65 @@ button.hamburger {
       top: 70px;
       flex-direction: column;
       display: none; } }
+  .navigation__searchWrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 150px;
+    max-width: 180px;
+    text-align: center; }
+    @media only screen and (max-width: 1800px) {
+      .navigation__searchWrapper {
+        right: 100px; } }
+    @media only screen and (max-width: 1500px) {
+      .navigation__searchWrapper {
+        right: 20px; } }
+    @media only screen and (max-width: 1200px) {
+      .navigation__searchWrapper {
+        position: relative;
+        display: block;
+        max-width: 100%;
+        right: 0; } }
   .navigation input {
-    border-bottom: 1px solid white; }
+    border-bottom: 1px solid #292935; }
+    @media only screen and (max-width: 1200px) {
+      .navigation input {
+        border-bottom: 1px solid #ffffff; } }
   .navigation-input {
-    width: 100%;
+    width: 80%;
     outline: none;
-    background-color: #292935;
     border: none;
     font-size: 18px;
     font-weight: 300;
     font-family: "Poppins", sans-serif;
-    padding-left: 20px;
     margin-bottom: 20px;
     margin-top: 20px;
-    color: #ffffff; }
+    color: #292935;
+    background-color: #ffffff; }
+    @media only screen and (max-width: 1200px) {
+      .navigation-input {
+        background-color: #292935;
+        color: #ffffff; } }
     .navigation-input::placeholder {
-      color: #ffffff; }
+      color: #292935; }
+      @media only screen and (max-width: 1200px) {
+        .navigation-input::placeholder {
+          color: #ffffff; } }
   .navigation-img {
+    display: none;
     position: absolute;
-    right: 10px;
+    right: 5px;
     top: 50%;
     transform: translateY(-50%);
     filter: invert(100%); }
+    @media only screen and (max-width: 1200px) {
+      .navigation-img {
+        display: block; } }
   .navigation img {
     width: 16px;
     height: 16px; }
   .navigation-link {
     height: 100%; }
-    .navigation-link:first-child {
-      position: relative; }
     @media only screen and (max-width: 1200px) {
       .navigation-link {
         background-color: #292935;
@@ -139,6 +169,9 @@ button.hamburger {
 
 .navigation.active {
   display: flex; }
+
+.navigation__searchWrapper.active {
+  display: block !important; }
 
 .active {
   display: block; }

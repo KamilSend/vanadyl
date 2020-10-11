@@ -443,7 +443,8 @@ button.hamburger {
     .people__wrapper__cover {
       margin: 10px;
       opacity: 0.5;
-      transition: .2s; }
+      transition: .2s;
+      cursor: pointer; }
       .people__wrapper__cover:nth-child(3) {
         opacity: 0; }
       @media only screen and (max-width: 1200px) {
@@ -534,5 +535,5 @@ button.hamburger {
   box-sizing: border-box; }
 
 body {
-  background-color: #fefeff;
+  background-color: #fefefe;
   overflow-x: hidden; }

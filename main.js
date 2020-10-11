@@ -101,7 +101,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
         searchWrapper.classList.toggle('active')
     })
 
-
     //SEARCH-END------------------------------------------------------------------------------------------
 
 })

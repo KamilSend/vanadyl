@@ -1,7 +1,6 @@
 .people{
   position: relative;
   @include respond(tab-land){
-
   }
 
   &-img{
@@ -26,6 +25,7 @@
       margin:10px;
       opacity:0.5;
       transition: .2s;
+      cursor: pointer;
 
       &:nth-child(3){
         opacity:0;

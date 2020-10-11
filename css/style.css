@@ -55,11 +55,35 @@ button.hamburger {
       top: 70px;
       flex-direction: column;
       display: none; } }
+  .navigation input {
+    border-bottom: 1px solid white; }
+  .navigation-input {
+    width: 100%;
+    outline: none;
+    background-color: #292935;
+    border: none;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #ffffff; }
+    .navigation-input::placeholder {
+      color: #ffffff; }
+  .navigation-img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: invert(100%); }
   .navigation img {
     width: 16px;
     height: 16px; }
   .navigation-link {
     height: 100%; }
+    .navigation-link:first-child {
+      position: relative; }
     @media only screen and (max-width: 1200px) {
       .navigation-link {
         background-color: #292935;

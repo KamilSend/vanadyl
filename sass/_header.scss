@@ -82,6 +82,37 @@ button.hamburger{
     display:none;
   }
 
+  input{
+    border-bottom: 1px solid white;
+  }
+  &-input{
+    width:100%;
+    outline:none;
+    background-color: #292935;
+    border:none;
+    font-size: 18px;
+    //line-height: 64px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    padding-left:20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+
+
+    &::placeholder{
+      color: #ffffff;
+    }
+  }
+
+  &-img{
+    position: absolute;
+    right:10px;
+    top:50%;
+    transform: translateY(-50%);
+    filter: invert(100%);
+  }
+
   img{
     width:16px;
     height:16px;
@@ -89,7 +120,9 @@ button.hamburger{
 
   &-link{
     height:100%;
-    //width:$menu-width*0.7;
+    &:first-child{
+      position: relative;
+    }
     @include respond(tab-land){
       background-color: #292935;
       width:$menu-width;

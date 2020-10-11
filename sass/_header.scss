@@ -29,15 +29,6 @@ header{
       font-size:18px;
     }
 
-    //&:hover::after{
-    //  position:absolute;
-    //  top:67px;
-    //  left:$menu-padding;
-    //  content:"";
-    //  width: calc(100% - 40px);
-    //  height:3px;
-    //  background-color: rgba(64, 68, 230, 255);
-    //}
   }
 
   .navigation-link > a:hover::after{
@@ -50,8 +41,19 @@ header{
       height:3px;
       background-color: rgba(64, 68, 230, 255);
 
+    @include respond(tab-land){
+      display: none;
+    }
   }
 
+  .navigation-link > a:active{
+    transform: translateX(0);
+    color: #4044e6;
+
+    @include respond(tab-land){
+      transform: translateX(15px);
+    }
+  }
 
 }
 
@@ -70,7 +72,6 @@ button.hamburger{
   display:flex;
   flex-direction: row;
   align-items: center;
-  //position: relative;
   position: static;
   z-index:3;
 
@@ -156,9 +157,7 @@ button.hamburger{
 
   &-link{
     height:100%;
-    &:first-child{
-      //position: relative;
-    }
+
     @include respond(tab-land){
       background-color: #292935;
       width:$menu-width;
@@ -203,6 +202,10 @@ button.hamburger{
           transform: translateX(15px);
           color: #4044e6;
         }
+        &:active{
+          transform: translateX(15px);
+          color: #4044e6;
+        }
 
         @include respond(tab-land){
           font-size: 18px;
@@ -219,15 +222,13 @@ button.hamburger{
         background-color: #292935;
         display:none;
         padding-left:$menu-padding;
+
         @include respond(tab-land){
           position:static;
         }
       }
     }
-
   }
-
-
 }
 
 .navigation.active{
